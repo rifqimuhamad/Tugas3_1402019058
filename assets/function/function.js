@@ -9,35 +9,7 @@ $(function () {
     });
 });
 // Berfungsi untuk memilih hitungan yang ingin di gunakan 
-    $(document).ready(function () {
-        $("#tabung").hide();
-        $("#kerucut").hide();
-        $("#bola").hide();
-        $("#hide").click(function () {
-        $("#tabung").hide();
-        });
-        $("#show").click(function () {
-        $("#tabung").show();
-        $("#kerucut").hide();
-        $("#bola").hide();
-        });
-        $("#hidek").click(function () {
-            $("#kerucut").hide();
-        });
-        $("#showk").click(function () {
-            $("#kerucut").show();
-            $("#tabung").hide();
-            $("#bola").hide();
-        });
-        $("#hideb").click(function () {
-        $("#bola").hide();
-        });
-        $("#showb").click(function () {
-        $("#bola").show();
-        $("#tabung").hide();
-        $("#kerucut").hide();
-        });
-    });
+var _0xf97a=["\x68\x69\x64\x65","\x23\x74\x61\x62\x75\x6E\x67","\x23\x6B\x65\x72\x75\x63\x75\x74","\x23\x62\x6F\x6C\x61","\x63\x6C\x69\x63\x6B","\x23\x68\x69\x64\x65\x31","\x73\x68\x6F\x77","\x23\x73\x68\x6F\x77\x31","\x23\x68\x69\x64\x65\x6B\x31","\x23\x73\x68\x6F\x77\x6B\x31","\x23\x68\x69\x64\x65\x62\x31","\x23\x73\x68\x6F\x77\x62\x31","\x72\x65\x61\x64\x79"];$(document)[_0xf97a[12]](function(){$(_0xf97a[1])[_0xf97a[0]]();$(_0xf97a[2])[_0xf97a[0]]();$(_0xf97a[3])[_0xf97a[0]]();$(_0xf97a[5])[_0xf97a[4]](function(){$(_0xf97a[1])[_0xf97a[0]]()});$(_0xf97a[7])[_0xf97a[4]](function(){$(_0xf97a[1])[_0xf97a[6]]();$(_0xf97a[2])[_0xf97a[0]]();$(_0xf97a[3])[_0xf97a[0]]()});$(_0xf97a[8])[_0xf97a[4]](function(){$(_0xf97a[2])[_0xf97a[0]]()});$(_0xf97a[9])[_0xf97a[4]](function(){$(_0xf97a[2])[_0xf97a[6]]();$(_0xf97a[1])[_0xf97a[0]]();$(_0xf97a[3])[_0xf97a[0]]()});$(_0xf97a[10])[_0xf97a[4]](function(){$(_0xf97a[3])[_0xf97a[0]]()});$(_0xf97a[11])[_0xf97a[4]](function(){$(_0xf97a[3])[_0xf97a[6]]();$(_0xf97a[1])[_0xf97a[0]]();$(_0xf97a[2])[_0xf97a[0]]()})})
 
   // Meminta pengunjung untuk menuliskan nama, dan mengecek waktu 
   nama();
