@@ -111,7 +111,7 @@ $(function () {
             document.getElementById('masukan_tinggi1').value = '';
         } else {
             // display the result
-            document.getElementById('result1').textContent = "Luas permukaan = " + z.toFixed(2) + " m^2 \n" + "Volume = " + y.toFixed(2) + " m^2";
+            document.getElementById('result1').textContent = "Luas permukaan = " + z.toFixed(2) + " m"+"2".sup()  + "\nVolume = " + y.toFixed(2) + " m"+"3".sup();
         }
     }
  }
@@ -133,7 +133,7 @@ $(function () {
             document.getElementById('masukan_garis').value = '';
         } else {
         // display the result
-            document.getElementById('result2').textContent = "Luas permukaan = " + a.toFixed(2) + " m^2\n" + "Volume = " + d.toFixed(2) + " m^2";
+            document.getElementById('result2').textContent = "Luas permukaan = " + a.toFixed(2) + " m"+"2".sup() + "\nVolume = " + d.toFixed(2) + " m"+"3".sup() ;
         }
     }
  }
@@ -151,7 +151,7 @@ $(function () {
             document.getElementById('radius').value = "";
         } else {
         // display the result
-            document.getElementById('result3').textContent = "Luas permukaan = " + b.toFixed(2) + " m^2\n" + "Volume = " + c.toFixed(2) + " m^2";
+            document.getElementById('result3').textContent = "Luas permukaan = " + b.toFixed(2) + " m"+"2".sup()  + "\nVolume = " + c.toFixed(2) + " m"+"3".sup();
         }
     }
  }
