@@ -8,6 +8,9 @@ body {
     margin: 0;
     padding: 0;
 }
+
+/*header*/
+
 .navbar {
     transition: all 0.4s;
 }
@@ -56,21 +59,37 @@ body {
     }
 }
 
+/*banner*/
 
 .calorbanner{
-    background-color: #a8af4c;
-    background-image: linear-gradient(135deg, #a8af4c 0%, #c4e0e5 100%);
+    position: relative;
+    padding-top: 110px;
+    background-color: #8cbcff;
+    
 }
+    .calorbanner:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        bottom: 0px;
+        background: #8cbcff;
+        background-image: url(assets/img/atas-shape.png);
+        background-size: 112%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+
 
 .wrap-container{
     margin: 0;
     padding: 0;
 }
 .home-myprojek{
-    margin-top:  150px;
+    margin-top: 110px;
     margin-right: 0%;
-    margin-lif: 0%;
-    
+    margin-bottom: 110px;
+    margin-left: : 0%;
 }
 
 .home-myprojek h1{
@@ -78,7 +97,11 @@ body {
     letter-spacing:  3px;
     color:#fff
 }
-
+.home-myprojek h2 {
+    color:#fff;
+    font-weight:  300;
+    letter-spacing:  3px;
+}
 .home-myprojek h4 {
     color:#fff;
     font-weight:  300;
@@ -93,6 +116,10 @@ body {
     font-size:  21px;
     letter-spacing:  2px;
 }
+
+/*Perhitungan*/
+
+
 .card {
     margin-bottom: 10px;
 }
@@ -111,6 +138,17 @@ body {
     background-size: cover;
     border-radius: 20px;
 }
+.card-floating{
+    border-top: 5px solid #8cbcff;
+    overflow: hidden;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+.card-title{
+    font-weight: 300;
+}
+.card-padding{
+    padding: 30px;
+}
 #frame{
     width: 300px;
     margin: 0px auto;
@@ -122,17 +160,6 @@ body {
     margin-bottom: 20px;
 }
 .form-group input{
-    width: 100%;
-    font-size: 1em;
-    color: grey;
-    padding: 10px 10px;
-    background: transparent;
-    border: 1px solid gray;
-    z-index: 9;
-    box-sizing: border-box;
-    display: block;
-}
-.form-group textarea{
     width: 100%;
     font-size: 1em;
     color: grey;
@@ -163,30 +190,50 @@ body {
     background:#f9f9f9;
     z-index:1;
 }
-.form-group textarea:focus + label,
-.form-group textarea:valid + label{
-    top: 7px !important;
-    left: 5px;
-    font-size: 0.8em;
-    transform: translate3d(0, -100%, 0);
-    opacity: 1;
-    padding: 0px 10px;
-    background:#f9f9f9;
-    z-index:1;
+
+/*Footer*/
+
+.footer-area {
+    position: relative;
+    padding-top: 110px;
 }
-.footer {
-    height: 70px;
-  }
-  .social-media{
-    margin: 20px;
-  }
-  .social-media a{
-    color: white;
-    margin: 20px;
-    font-size: 21px;
-    text-decoration: none;
-    transition: .3s linear;
-  }
-  .social-media a:hover{
-    color: #fc5c65;
-  }
+
+    .footer-area:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        bottom: 0px;
+        background: #8cbcff;
+        background-image: url(assets/img/footer-shape.svg);
+        background-size: 112%;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+
+
+.footer-area .social li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+    .footer-area .social li a {
+        font-size: 24px;
+        color: #fff;
+        transition: all 0.3s ease-out 0s;
+    }
+
+        .footer-area .social li a:hover {
+            color: #fe6e9a;
+        }
+
+
+.footer-area .copyright .text {
+    color: #fff;
+    padding-left: 65px;
+
+}
+
+.row-padding1{
+    padding: 50px 0px;
+}

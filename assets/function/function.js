@@ -81,14 +81,17 @@ $(function () {
       nama();
       }
       if (person != null || hour >= 12) {
-          if (hour >= 0 && hour < 12) {
-              txt = "Hello " + person + " Good Morning.";
+          if (hour >= 0 && hour < 11) {
+              txt = "Hello " + person + " Selamat Pagi.";
           }
-          if (hour >= 12 && hour < 18) {
-              txt = "Hello " + person + " Good Afternoon.";
+          if (hour >= 11 && hour < 14) {
+              txt = "Hello " + person + " Selamat Siang.";
+          }
+          if (hour >= 14 && hour < 18) {
+              txt = "Hello " + person + " Selamat Sore.";
           }
           if (hour >= 18) {
-              txt = "Hello " + person + " Good Evening.";
+              txt = "Hello " + person + " Selamat Malam.";
           }
       } else {
       txt = "User cancelled the prompt.";
@@ -111,7 +114,8 @@ $(function () {
             document.getElementById('masukan_tinggi1').value = '';
         } else {
             // display the result
-            document.getElementById('result1').textContent = "Luas permukaan = " + z.toFixed(2) + " m"+"2".sup()  + "\nVolume = " + y.toFixed(2) + " m"+"3".sup();
+            document.getElementById('result_tabung1').innerHTML = "Luas permukaan = " + z.toFixed(2) + " m"+"2".sup() ;
+            document.getElementById('result_tabung2').innerHTML = "Volume = " + y.toFixed(2) + " m"+"3".sup();
         }
     }
  }
@@ -133,14 +137,15 @@ $(function () {
             document.getElementById('masukan_garis').value = '';
         } else {
         // display the result
-            document.getElementById('result2').textContent = "Luas permukaan = " + a.toFixed(2) + " m"+"2".sup() + "\nVolume = " + d.toFixed(2) + " m"+"3".sup() ;
+            document.getElementById('result_kerucut1').innerHTML = "Luas permukaan = " + a.toFixed(2) + " m"+"2".sup();
+            document.getElementById('result_kerucut2').innerHTML = "Volume = " + d.toFixed(2) + " m"+"3".sup() ;
         }
     }
  }
  // menghitung bola
  var bola = function () {
     // get the radius
-    let radius = document.getElementById('radius').value
+    let radius = document.getElementById('masukan_jari3').value
     var b = 4 * Math.PI * Math.pow(radius, 2);
     var c = (4 / 3) * Math.PI * Math.pow(radius, 3);
     if (radius == "") {
@@ -151,7 +156,15 @@ $(function () {
             document.getElementById('radius').value = "";
         } else {
         // display the result
-            document.getElementById('result3').textContent = "Luas permukaan = " + b.toFixed(2) + " m"+"2".sup()  + "\nVolume = " + c.toFixed(2) + " m"+"3".sup();
+            document.getElementById('result_bola1').innerHTML = "Luas permukaan = " + b.toFixed(2) + " m"+"2".sup() ;
+            document.getElementById('result_bola2').innerHTML = "Volume = " + c.toFixed(2) + " m"+"3".sup();
         }
     }
+ }
+
+
+fot()
+ function fot() {
+    var tahun = new Date().getFullYear();
+    document.getElementById('th').innerHTML = "Copyright  &#169 " + tahun + " 3D Kalkulator. Design by Muhamad Rifqi.";
  }
