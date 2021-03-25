@@ -1,0 +1,239 @@
+.row-padding{
+    padding: 100px 0px;
+}
+body {
+    font-family: Lato;
+    color: #606060;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+/*header*/
+
+.navbar {
+    transition: all 0.4s;
+}
+
+.navbar .nav-link {
+    color: #fff;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+}
+
+
+.navbar.active {
+    background: #fff;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.active .nav-link {
+    color: #555;
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+    color: #555;
+    text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+    color:  #555;
+}
+
+@media (max-width: 991.98px) {
+    .navbar {
+        background: #fff;
+    }
+
+    .navbar .navbar-brand, .navbar .nav-link {
+        color: #555;
+    }
+}
+
+/*banner*/
+
+.calorbanner{
+    position: relative;
+    padding-top: 110px;
+    background-color: #8cbcff;
+    
+}
+    .calorbanner:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        bottom: 0px;
+        background: #8cbcff;
+        background-image: url(assets/img/atas-shape.png);
+        background-size: 112%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+
+
+.wrap-container{
+    margin: 0;
+    padding: 0;
+}
+.home-myprojek{
+    margin-top: 110px;
+    margin-right: 0%;
+    margin-bottom: 110px;
+    margin-left: : 0%;
+}
+
+.home-myprojek h1{
+    font-weight:  300;
+    letter-spacing:  3px;
+    color:#fff
+}
+.home-myprojek h2 {
+    color:#fff;
+    font-weight:  300;
+    letter-spacing:  3px;
+}
+.home-myprojek h4 {
+    color:#fff;
+    font-weight:  300;
+    margin-top:  20px;
+    font-size:  21px;
+    letter-spacing:  2px;
+}
+.home-myprojek h5 {
+    color:#fff;
+    font-weight:  300;
+    margin-top:  20px;
+    font-size:  21px;
+    letter-spacing:  2px;
+}
+
+/*Perhitungan*/
+
+
+.card {
+    margin-bottom: 10px;
+}
+.card1 {
+    background-image: url(assets/img/card1.png);
+    background-size: cover;
+    border-radius: 20px;
+}
+.card2 {
+    background-image: url(assets/img/card2.png);
+    background-size: cover;
+    border-radius: 20px;
+}
+.card3 {
+    background-image: url(assets/img/card3.png);
+    background-size: cover;
+    border-radius: 20px;
+}
+.card-floating{
+    border-top: 5px solid #8cbcff;
+    overflow: hidden;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+.card-title{
+    font-weight: 300;
+}
+.card-padding{
+    padding: 30px;
+}
+#frame{
+    width: 300px;
+    margin: 0px auto;
+    text-align: left;
+    box-sizing: border-box;
+}
+.form-group{
+    position: relative;
+    margin-bottom: 20px;
+}
+.form-group input{
+    width: 100%;
+    font-size: 1em;
+    color: grey;
+    padding: 10px 10px;
+    background: transparent;
+    border: 1px solid gray;
+    z-index: 9;
+    box-sizing: border-box;
+    display: block;
+}
+.form-group label{
+    position: absolute;
+    top: -2px;
+    padding: 11px 10px;
+    transition: all 200ms;
+    opacity: 0.5;
+    font-size: 1em;
+    z-index: -1;
+}
+.form-group input:focus + label,
+.form-group input:valid + label{
+    top: 7px !important;
+    left: 5px;
+    font-size: 0.8em;
+    transform: translate3d(0, -100%, 0);
+    opacity: 1;
+    padding: 0px 10px;
+    background:#f9f9f9;
+    z-index:1;
+}
+
+/*Footer*/
+
+.footer-area {
+    position: relative;
+    padding-top: 110px;
+}
+
+    .footer-area:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        bottom: 0px;
+        background: #8cbcff;
+        background-image: url(assets/img/footer-shape.svg);
+        background-size: 112%;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+
+
+.footer-area .social li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+    .footer-area .social li a {
+        font-size: 24px;
+        color: #fff;
+        transition: all 0.3s ease-out 0s;
+    }
+
+        .footer-area .social li a:hover {
+            color: #fe6e9a;
+        }
+
+
+.footer-area .copyright .text {
+    color: #fff;
+    padding-left: 65px;
+
+}
+
+.row-padding1{
+    padding: 50px 0px;
+}
